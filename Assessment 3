@@ -1,0 +1,82 @@
+1.For the given JSON iterate over all for loops (for, for in, for of, forEach)?
+answer 
+
+For (let i = 0; i < json.length; i++) {
+  console.log(json[i]);
+}
+
+For in (for (let key in json) {
+  console.log(key, json[key]);
+}
+
+For of (for (let value of json) {
+  console.log(value);
+}
+
+ForEach (json.forEach(element => {
+  console.log(element);
+});
+
+
+
+
+
+
+
+
+
+2.Create your own resume data in JSON format ?
+code  
+
+let resumeData = {
+    name: 'Ashish Yadav',
+    profession: 'Self employee',
+    contactInfo: {
+      email: 'ashish786abhi@gmail.com',
+      phone: '0424653393',
+      address: '55 beddoe avenue, Melbourne,Vic 3168'
+    },
+    skills: [
+      'JavaScript',
+      'HTML'
+    ],
+    experience: [
+      {
+        company: 'Nuforce pty ltd',
+        title: 'Secuirty protection technology',
+        duration: 'January 2021 - 2022',  
+      },
+      {
+        company: 'Monjon pty ltd',
+        title: 'security protection technology',
+        duration: 'October 2019 - December 2021',   
+      }
+    ],
+    education: [
+      {
+        institution: 'Charls Struct University',
+        degree: 'Masters of information technology',
+        major: 'Networking',
+        graduation: 'May 2019'
+      }
+    ]
+  }
+
+  console.log(resumeData)
+  
+  out put
+  
+ name: "Ashish Yadav"
+profession: "Self employee"
+contactInfo: 
+address: "55 beddoe avenue, Melbourne,Vic 3168"
+email: "ashish786abhi@gmail.com"
+phone: "0424653393"
+skills: (2) ['JavaScript', 'HTML']
+experience: {company: 'Nuforce pty ltd', title: 'Secuirty protection technology', duration: 'January 2021 - 2022'}
+1:{company: 'Monjon pty ltd', title: 'security protection technology', duration: 'October 2019 - December 2021'}
+degree: "Masters of information technology"
+graduation: "May 2019"
+institution: "Charls Struct University"
+major: "Networking"
+
